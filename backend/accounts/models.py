@@ -5,7 +5,7 @@ class RoleChoices(models.TextChoices):
     PARENT = "PARENT", "Parent"
     STAFF = "STAFF", "Staff"
     ADMIN = "ADMIN", "Admin"
-
+    
 class GenderChoices(models.TextChoices):
     MALE = "MALE", "Male"
     FEMALE = "FEMALE", "Female"
