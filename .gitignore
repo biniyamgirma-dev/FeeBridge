@@ -1,19 +1,19 @@
 # Environment variables
-   .env
+.env
 
-   # Python
-   venv/
-   .venv/
-   __pycache__/
-   *.pyc
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
 
-   # Django
-   *.sqlite3
+# Django
+*.sqlite3
 
-   # Node / React
-   node_modules/
-   dist/
+# Node / React
+node_modules/
+dist/
 
-   # Editor
-   .vscode/
-   .idea/
+# Editor
+.vscode/
+.idea/
