@@ -8,7 +8,7 @@ from api.serializers.accounts import UserSerializer, RegisterSerializer
 
 class MeView(APIView):
     permission_classes = [IsAuthenticated]
-
+    
     def get(self, request):
         serializer = UserSerializer(request.user)
         return Response(serializer.data)
