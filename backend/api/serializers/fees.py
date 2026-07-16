@@ -5,10 +5,7 @@ class FeeStructureSerializer(serializers.ModelSerializer):
     class Meta:
         model = FeeStructure
         fields = '__all__'
-        
-from rest_framework import serializers
-from fees.models import FeeStructure, Invoice
-
+      
 
 class InvoiceSerializer(serializers.ModelSerializer):
     class Meta:

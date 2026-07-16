@@ -3,6 +3,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from api.views.accounts import MeView, RegisterView
 from api.views.students import StudentListCreateView, StudentDetailView
 from api.views.fees import FeeStructureListCreateView, FeeStructureDetailView, InvoiceListCreateView, InvoiceDetailView
+from api.views.payments import PaymentCreateView
 
 urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
@@ -18,4 +19,6 @@ urlpatterns = [
 
     path('invoices/', InvoiceListCreateView.as_view(), name='invoice-list-create'),
     path('invoices/<int:pk>/', InvoiceDetailView.as_view(), name='invoice-detail'),
+    
+    path('payments/', PaymentCreateView.as_view(), name='payment-create'),
 ]
